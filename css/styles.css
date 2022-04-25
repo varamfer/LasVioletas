@@ -349,7 +349,6 @@ textarea{
 
 #cuadroAbajo {
     margin-top: 70px;
-    margin-left: 100px;
     display: flex;
     justify-content: space-around;
     background-color: rgb(126, 124, 128);
@@ -359,11 +358,7 @@ textarea{
     font-size: small;
 }
 
-@media (max-width: 320px) {
-  #cuadroAbajo {
-    margin-left: 0%;
-  }
-}
+
 
 /*--------------------FIN FORMULARIO-----------------------------*/
 
@@ -375,7 +370,7 @@ textarea{
 /*ESTILO FOOTER*/
 .fondoFooter 
 {
-background-color:rgb(250, 240, 255);
+background-color:rgb(250, 240, 255) !i
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
