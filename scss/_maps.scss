@@ -1,0 +1,9 @@
+/*MAPS*/
+
+$mapRedes: (h1:#7730bf, a:grey, ul li: #7e7c80 );
+
+@each $red, $color in $mapRedes {
+    #{$red} {
+        color:$color;
+        }
+}

@@ -1,0 +1,22 @@
+/*EXTEND */
+
+.titulos {
+    font-family: $fuente;
+    color:$color-headers;
+    text-align: left;
+}
+
+h2 {
+    @extend .titulos;
+    margin-bottom: 0px;
+    font-size: xx-large;
+    padding-left: 10px;
+}
+
+h3 {
+    @extend .titulos;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    font-size: x-large;
+}
+

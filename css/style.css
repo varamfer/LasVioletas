@@ -4,38 +4,51 @@
   src: url(../fonts/Raleway-VariableFont_wght.ttf); }
 
 /*FIN IMPORTADA DE GOOGLE FONTSs*/
+/*Imports*/
+/*EXTEND */
+.titulos, h2, h3 {
+  font-family: "Raleway", sans-serif;
+  color: #67636b;
+  text-align: left; }
+
+h2 {
+  margin-bottom: 0px;
+  font-size: xx-large;
+  padding-left: 10px; }
+
+h3 {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  font-size: x-large; }
+
+/*MIXIN*/
+/*mixin con paramtros*/
+/*MAPS*/
+h1 {
+  color: #7730bf; }
+
+a {
+  color: grey; }
+
+ul li {
+  color: #7e7c80; }
+
+/*End Imports*/
 /*ESTILO TITULOS y LINKS*/
 h1 {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   color: #7730bf;
   margin-top: 0%;
-  padding-top: 25px;
+  padding-top: 2rem;
   text-align: center;
   font-size: 2.5rem; }
-
-h2 {
-  font-family: "Raleway", sans-serif;
-  color: #67636b;
-  margin-bottom: 0px;
-  text-align: left;
-  font-size: xx-large;
-  padding-left: 10px; }
-
-h3 {
-  font-family: "Raleway", sans-serif;
-  color: #67636b;
-  margin-bottom: 10px;
-  padding-left: 15px;
-  text-align: left;
-  font-size: x-large; }
 
 p {
   font-family: "Raleway", sans-serif; }
 
 a {
-  text-decoration: none;
-  color: grey; }
+  text-decoration: none; }
 
 /*FIN ESTILO TITULOS y LINKS*/
 /*ESTILO GLOBAL*/
@@ -58,7 +71,7 @@ header {
   .nav-link.active {
     color: darkviolet; }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show.nav-link {
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .show.nav-link {
   color: darkviolet; }
 
 .navbar-nav {
@@ -108,9 +121,6 @@ header {
     .parrafo_aboutus {
       font-size: large; } }
 
-.mision p {
-  color: red; }
-
 @media (max-width: largedesktop) {
   .img-fluid {
     height: 100%; } }
@@ -137,9 +147,9 @@ header {
 
 .fondoPages {
   background-image: url(../img/fondoPages.jpg);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   border-bottom: 2px solid #7e7c80; }
 
 .card-flex {
@@ -170,8 +180,11 @@ header {
 ul li {
   list-style-type: none;
   font-family: "Raleway",sans-serif;
-  color: #67636b;
+  color: #7e7c80;
   font-size: x-large; }
+  @media (max-width: 480px) {
+    ul li {
+      font-size: large; } }
 
 /*FIN GALERIA*/
 /*CONTACTO*/
@@ -187,7 +200,7 @@ ul li {
     align-items: flex-start; }
 
 /*Fin Seccion contacto**/
-/*-------------------- FORMULARIO-----------------------------*/
+/*FORMULARIO*/
 .formulario {
   width: 380px;
   height: 500px;
@@ -264,14 +277,14 @@ textarea {
   color: whitesmoke;
   font-size: small; }
 
-/*--------------------FIN FORMULARIO-----------------------------*/
-/*----------------FIN ESTILO CONTACTO---------------------------------------------------------------*/
+/*FIN FORMULARIO*/
+/*FIN ESTILO CONTACTO*/
 /*ESTILO FOOTER*/
 .fondoFooter {
   background-color: #faf0ff !important;
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-repeat: no-repeat; }
 
 .col-12 {
   display: flex;
